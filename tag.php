@@ -21,8 +21,8 @@
 						<?php get_template_part( '/template_parts/content', 'search' ); ?>
 
 					<?php endwhile; ?>
-					
-					<hr>
+
+					<hr><hr>
 
 					<div class="float-left pagination pb-2">
 	            <?php next_posts_link('« Older posts'); ?>
