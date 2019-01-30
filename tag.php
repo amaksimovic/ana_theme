@@ -22,7 +22,7 @@
 
 					<?php endwhile; ?>
 
-					<hr><hr>
+					<hr>
 
 					<div class="float-left pagination pb-2">
 	            <?php next_posts_link('« Older posts'); ?>
