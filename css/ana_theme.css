@@ -1,3 +1,21 @@
+/*
+  ======================================
+  1. Global
+  2. Header
+  3. Sidebar
+  4. Main
+  5. Comments
+  6. Footer
+  7. Responsive
+  ======================================
+*/
+
+/*
+  ======================================
+  1. Global
+  ======================================
+*/
+
 html,
 body {
     margin: 0;
@@ -28,6 +46,13 @@ h3 {
 small {
     font-family: sans-serif;
 }
+
+/*
+  ======================================
+  2. Header
+  ======================================
+*/
+
 .navbar,
 .jumbotron {
     background: #FFF;
@@ -85,7 +110,13 @@ a.nav-link.active {
     color: #000;
     pointer-events: none;
 }
-main,
+
+/*
+  ======================================
+  3. Sidebar
+  ======================================
+*/
+
 #sidebar {
     margin: 10px 30px;
 }
@@ -165,21 +196,20 @@ a.tag-cloud-link:active {
     background-color: #beb1c6;
     color: #000;
 }
-
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background: #937da0; /* Set a background color */
-    color: #FFF; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 20px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: #937da0;
+    color: #FFF; /
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
     font-family: 'Raleway Medium', sans-serif;
 }
 #myBtn:hover {
@@ -189,6 +219,16 @@ a.tag-cloud-link:active {
 #myBtn:active {
     color: #000;
     background: #937da0;
+}
+
+/*
+  ======================================
+  4. Main
+  ======================================
+*/
+
+main {
+    margin: 10px 30px;
 }
 article a:link,
 article a:visited {
@@ -300,9 +340,13 @@ a.more-link:visited {
 .thumbnail img {
     margin: 5px 0;
 }
-h2.widgettitle {
-    font-family: 'Raleway Medium', sans-serif;
-}
+
+/*
+  ======================================
+  5. Comments
+  ======================================
+*/
+
 h3.comment-count-area {
     font-family: 'Raleway Medium', sans-serif;
     color: #3F3F3F;
@@ -363,12 +407,26 @@ input#email:focus,
 input#url:focus {
     border: 1px solid #9D8AA9!important;
 }
+
+/*
+  ======================================
+  6. footer
+  ======================================
+*/
+
 footer {
      border-top: 1px solid #eee;
 }
 .footer-text {
     font-family: 'Raleway Medium', sans-serif;
 }
+
+/*
+  ======================================
+  7. Responsive
+  ======================================
+*/
+
 @media only screen and (max-width: 750px) {
 
     .navbar {
