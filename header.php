@@ -3,8 +3,14 @@
 
     <head>
       <meta charset="<?php bloginfo('charset'); ?>">
-      <title><?php bloginfo('name'); ?><?php wp_title('|'); ?></title>
-      <meta name="discription" content="<?php bloginfo('discription'); ?>">
+      <title>
+        <?php if( is_front_page() || is_home() ) {
+            echo get_bloginfo( 'name' );
+        } else {
+            echo wp_title( '' );
+        }?>
+      </title>
+      <meta name="description" content="<?php bloginfo('description'); ?>">
       <?php wp_head(); ?>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Raleway:400,500|Source+Sans+Pro:400,400i,600&amp;subset=latin-ext" rel="stylesheet">
@@ -26,7 +32,7 @@
     			<a href="http://localhost/yanghaizi/"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" class="img-fluid" /></a>
 
         </div>
-        
+
       </div>
 
       <nav class="navbar navbar-expand-sm sticky-top">
