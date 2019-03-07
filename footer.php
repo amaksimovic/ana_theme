@@ -16,13 +16,13 @@
 
       <div class="container footer-text">
         <span class="float-sm-left">Copyright © 2019&nbsp;</span>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/books.png" alt="logo" height="25" class="float-sm-left">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/icon2.png" alt="logo" height="25" class="float-sm-left">
         <span class="float-sm-left">&nbsp;Books & Anything Else Club All rights reserved. </span>
         <span class="float-lg-right">YangHaizi theme by Aleksandar Maksimović</span>
       </div>
 
     </div>
-    
+
   </div>
 
 </footer>

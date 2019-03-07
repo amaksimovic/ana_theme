@@ -108,7 +108,6 @@ a.nav-link:hover {
 }
 a.nav-link.active {
     color: #000;
-    pointer-events: none;
 }
 
 /*
@@ -215,6 +214,7 @@ a.tag-cloud-link:active {
 #myBtn:hover {
     background: #4b2761;
     transition: background 0.25s ease-in;
+    cursor: pointer;
 }
 #myBtn:active {
     color: #000;
