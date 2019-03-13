@@ -24,7 +24,7 @@
 
 							<?php if( has_post_thumbnail() ): ?>
 
-								<div class="cover-img pb-2"><?php the_post_thumbnail( array(750,450) ); ?></div>
+								<div class="cover-img pb-2"><?php the_post_thumbnail(); ?></div>
 
 							<?php endif; ?>
 
