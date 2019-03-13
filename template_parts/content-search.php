@@ -12,11 +12,11 @@
 
 			<div class="col-12 col-lg-12">
 
-				<div class="cover-img pb-2"><?php the_post_thumbnail( 'search-thumb' ); ?></div>
+				<div class="search-img pb-2"><?php the_post_thumbnail(); ?></div>
 				<div class="content">
 					<?php the_content( $more_link_text , $strip_teaser ); ?>
 				</div>
-				
+
 			</div>
 
 		<?php else: ?>

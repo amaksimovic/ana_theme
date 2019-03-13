@@ -262,6 +262,11 @@ article small a:visited {
     height: auto;
     margin: 10px 0;
 }
+.search-img img {
+    max-width: 300px;
+    height: auto;
+    margin: 10px 0;
+}
 .content {
     padding: 0 0.3em;
 }
