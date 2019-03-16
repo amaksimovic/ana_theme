@@ -177,4 +177,4 @@ add_filter('img_caption_shortcode_width', 'my_img_caption_shortcode_width', 10, 
 */
 
 /*set_post_thumbnail_size( 750, 450, true );*/
-/*add_image_size( 'search-thumb' , 300, 180, true );*/
+/*add_image_size( 'search-thumb' , 300, 0, true );*/

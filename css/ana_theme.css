@@ -263,7 +263,7 @@ article small a:visited {
     margin: 10px 0;
 }
 .search-img img {
-    max-width: 300px;
+    max-width: 50%;
     height: auto;
     margin: 10px 0;
 }
@@ -439,6 +439,11 @@ footer {
     }
     .navbar li {
         padding-right: 10px;
+    }
+    .search-img img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
     }
     .content,
     #no-results,
