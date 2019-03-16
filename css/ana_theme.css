@@ -204,7 +204,7 @@ a.tag-cloud-link:active {
     border: none;
     outline: none;
     background: #937da0;
-    color: #FFF; /
+    color: #FFF;
     cursor: pointer;
     padding: 15px;
     border-radius: 20px;
@@ -269,9 +269,6 @@ article small a:visited {
 }
 .content {
     padding: 0 0.3em;
-}
-.content img {
-
 }
 .content h2,
 .content h3,
@@ -438,6 +435,9 @@ footer {
     }
     .navbar li {
         padding-right: 10px;
+    }
+    #myBtn {
+        opacity: 0.7;
     }
     .search-img img {
         max-width: 100%;
