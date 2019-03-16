@@ -88,9 +88,6 @@ a.nav-link {
     display: inline-block; /* novo */
     text-decoration: none; /* novo */
 }
-a.nav-link:visited {
-    color: ;
-}
 a.nav-link::after {
     content: '';
     display: block;
@@ -102,7 +99,6 @@ a.nav-link::after {
 a.nav-link:hover::after {
     width: 100%;
 }
-
 a.nav-link:hover {
     color: #000;
 }
