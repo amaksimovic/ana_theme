@@ -178,3 +178,18 @@ add_filter('img_caption_shortcode_width', 'my_img_caption_shortcode_width', 10, 
 
 /*set_post_thumbnail_size( 750, 450, true );*/
 /*add_image_size( 'search-thumb' , 300, 0, true );*/
+
+/*
+  ===================================
+  Setting search query post types
+  ===================================
+*/
+
+function SearchFilter($query) {
+  if ($query->is_search) {
+    $query->set('post_type', 'post');
+  }
+  return $query;
+}
+
+add_filter('pre_get_posts','SearchFilter');
