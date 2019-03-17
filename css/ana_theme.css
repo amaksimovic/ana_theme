@@ -329,6 +329,10 @@ article small a:visited {
     font-family: 'Raleway Medium', sans-serif;
     color: #3F3F3F;
 }
+.content img {
+    max-width: 95%;
+    height: auto;
+}
 p.wp-caption-text {
     font-style: italic;
     font-size: 0.8em;
@@ -521,7 +525,7 @@ footer {
       	height: 100%;
     }
     .content img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
     .pagination a:link,
