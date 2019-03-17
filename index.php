@@ -4,10 +4,10 @@
 
   <div class="row">
 
-    <div class="col-12 col-lg-9 pt-2 pb-2">
+    <div class="col-12 col-lg-9 pt-4 pb-2">
 
       <main>
-        
+
         <?php
 
         if( have_posts() ):

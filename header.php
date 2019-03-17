@@ -25,7 +25,7 @@
 
     <body <?php body_class( $ana_classes ); ?>>
 
-      <div class="jumbotron jumbotron-fluid mb-0">
+      <div class="jumbotron jumbotron-fluid mb-2">
 
         <div class="container">
 
