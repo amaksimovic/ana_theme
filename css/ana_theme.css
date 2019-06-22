@@ -111,6 +111,10 @@ a.nav-link.active {
 .menu-item-has-children a.nav-link:active {
     color: #000;
 }
+#nav-icon {
+  display: none;
+  float: right;
+}
 .menu-item-has-children:hover .dropdown-menu {
     display: block;
 }

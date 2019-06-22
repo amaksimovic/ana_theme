@@ -35,6 +35,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar-content">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/icon2.png" alt="logo" height="25" class="navbar-nav" id="nav-icon">
             <?php
             wp_nav_menu( array(
                 'theme_location' => 'primary', // Defined when registering the menu
