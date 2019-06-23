@@ -112,8 +112,14 @@ a.nav-link.active {
     color: #000;
 }
 #nav-icon {
-  display: none;
-  float: right;
+    display: none;
+    left: 50px;
+}
+.home-img {
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 60px;
+    background-size: 40px;
 }
 .menu-item-has-children:hover .dropdown-menu {
     display: block;

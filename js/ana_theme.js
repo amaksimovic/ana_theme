@@ -25,8 +25,16 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
-    document.getElementById("nav-icon").style.display = "block";
+    document.getElementsByClassName("home-img")[0].style.backgroundImage = "url('http://localhost/yanghaizi/wp-content/themes/ana_theme/img/icon2.png')";
 	} else {
-		document.getElementById("nav-icon").style.display = "none";
+		document.getElementsByClassName("home-img")[0].style.backgroundImage = "";
 	}
 }
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
+//     document.getElementsByClassName("home-img")[0].style.display = "block";
+// 	} else {
+// 		document.getElementsByClassName("home-img")[0].style.display = "none";
+// 	}
+// }
