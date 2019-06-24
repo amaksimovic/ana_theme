@@ -1,6 +1,6 @@
 // javascript function
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down from the top of de document, show the button
 
 jQuery(document).ready(function() {
 		var offset = 220;
@@ -20,21 +20,31 @@ jQuery(document).ready(function() {
 		})
 	});
 
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// When the user scrolls down 225px from the top of the document, show logo in menu
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
-    document.getElementsByClassName("home-img")[0].style.backgroundImage = "url('http://localhost/yanghaizi/wp-content/themes/ana_theme/img/icon2.png')";
+  if (document.body.scrollTop > 480 || document.documentElement.scrollTop > 480) {
+		document.getElementById("menu-search").style.display = "block";
+		document.getElementById("menu-logo").style.display = "block";
 	} else {
-		document.getElementsByClassName("home-img")[0].style.backgroundImage = "";
+		document.getElementById("menu-search").style.display = "none";
+		document.getElementById("menu-logo").style.display = "none";
 	}
 }
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
-//     document.getElementsByClassName("home-img")[0].style.display = "block";
-// 	} else {
-// 		document.getElementsByClassName("home-img")[0].style.display = "none";
-// 	}
-// }
+// $( document ).ready(function() {
+//             $(".navbar-nav").append("<li>" + "<?php echo get_search_form(); ?>" + "</li>");
+//         });
+
+
+// $(window).scroll(function() {
+// 	var scroll = $(window).scrollTop();
+//
+// 		if (scroll >= 225) {
+// 				$(".menu-search").addClass("visible");
+// 		} else {
+// 				$(".menu-search").removeClass("visible");
+// 			}
+// 	});

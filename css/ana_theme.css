@@ -115,11 +115,18 @@ a.nav-link.active {
     display: none;
     left: 50px;
 }
-.home-img {
+/* .home-img {
     background-repeat: no-repeat;
     background-position: left;
     padding-left: 60px;
     background-size: 40px;
+} */
+#menu-logo {
+  display: none;
+}
+#menu-search {
+    display: none;
+    margin: 3px 0;
 }
 .menu-item-has-children:hover .dropdown-menu {
     display: block;

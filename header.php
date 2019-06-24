@@ -35,8 +35,12 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar-content">
-          <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/icon2.png" alt="logo" height="25" class="navbar-nav" id="nav-icon"> -->
+
             <?php
+            $search_form = get_search_form( false ); // Return not echo
+            $items_wrap = '<ul id="%1$s" class="%2$s">%3$s';
+            $items_wrap .= sprintf( '<li id="menu-search">%1$s</li></ul>', $search_form );
+
             wp_nav_menu( array(
                 'theme_location' => 'primary', // Defined when registering the menu
                 'menu_id'        => 'primary-menu',
@@ -45,8 +49,10 @@
                 'menu_class'     => 'navbar-nav mx-auto',
                 'walker'         => new Bootstrap_NavWalker(), // This controls the display of the Bootstrap Navbar
                 'fallback_cb'    => 'Bootstrap_NavWalker::fallback', // For menu fallback
+                'items_wrap'     => $items_wrap
             ) );
             ?>
+
         </div>
 
       </nav>
