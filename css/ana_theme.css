@@ -64,8 +64,11 @@ small {
 .navbar {
     font-family: 'Raleway Medium', sans-serif;
     font-size: 1.3em;
-    background: rgba(255,255,255,0.9); /* novo */
+    background: rgba(255,255,255); /* novo */
     padding: 0;
+}
+.navbar.shadow {
+    box-shadow: 0 4px 19px 2px rgba(0,0,0,.06);
 }
 .custom-toggler.navbar-toggler {
     border: 2px solid #4b2761;
@@ -115,19 +118,33 @@ a.nav-link.active {
     display: none;
     left: 50px;
 }
-/* .home-img {
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 60px;
-    background-size: 40px;
-} */
 #menu-logo {
-  display: none;
+    display: none;
+    margin: 4px 15px 1px 0;
+    animation: slide-left 0.7s;
 }
 #menu-search {
     display: none;
-    margin: 3px 0;
+    margin: 4px 0 1px 15px;
+    animation: slide-right 0.7s;
 }
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .menu-item-has-children:hover .dropdown-menu {
     display: block;
 }
@@ -193,6 +210,7 @@ p.widget-title {
     border: 1px solid #C6C6C6;
     border-radius: 20px;
     font-family: 'Raleway Medium', sans-serif;
+    /* font-size: 1rem; */
 }
 .form-control:focus {
     border-color: #9D8AA9;

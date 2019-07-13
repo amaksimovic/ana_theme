@@ -18,9 +18,28 @@ jQuery(document).ready(function() {
 			jQuery('html, body').animate({scrollTop: 0}, duration);
 			return false;
 		})
-	});
 
-// When the user scrolls down 225px from the top of the document, show logo in menu
+		// Add shadow on navbar on scroll
+
+		jQuery(window).scroll(function() {
+		    var scroll = jQuery(window).scrollTop();
+		    if (scroll > 275) {
+		        jQuery(".navbar").addClass("shadow");
+						jQuery(".form-control").css("font-size","0.9rem");
+						jQuery(".form-control").css("height","35px");
+						jQuery(".btn").css("height","35px");
+		    }
+		    else {
+		        jQuery(".navbar").removeClass("shadow");
+						jQuery(".form-control").css("font-size","1rem");
+						jQuery(".form-control").css("height","40px");
+						jQuery(".btn").css("height","40px");
+		    }
+		});
+
+});
+
+// When the user scrolls down 225px from the top of the document, show logo and search in menu
 
 window.onscroll = function() {scrollFunction()};
 
@@ -33,18 +52,3 @@ function scrollFunction() {
 		document.getElementById("menu-logo").style.display = "none";
 	}
 }
-
-// $( document ).ready(function() {
-//             $(".navbar-nav").append("<li>" + "<?php echo get_search_form(); ?>" + "</li>");
-//         });
-
-
-// $(window).scroll(function() {
-// 	var scroll = $(window).scrollTop();
-//
-// 		if (scroll >= 225) {
-// 				$(".menu-search").addClass("visible");
-// 		} else {
-// 				$(".menu-search").removeClass("visible");
-// 			}
-// 	});
