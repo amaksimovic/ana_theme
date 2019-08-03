@@ -3,6 +3,8 @@
 // When the user scrolls down from the top of de document, show the button
 
 jQuery(document).ready(function() {
+
+		// When the user scrolls down from the top of de document, show the button
 		var offset = 220;
 		var duration = 500;
 		jQuery(window).scroll(function() {
@@ -25,21 +27,30 @@ jQuery(document).ready(function() {
 		    var scroll = jQuery(window).scrollTop();
 		    if (scroll > 275) {
 		        jQuery(".navbar").addClass("shadow");
-						jQuery(".form-control").css("font-size","0.9rem");
-						jQuery(".form-control").css("height","35px");
-						jQuery(".btn").css("height","35px");
+
 		    }
 		    else {
 		        jQuery(".navbar").removeClass("shadow");
-						jQuery(".form-control").css("font-size","1rem");
-						jQuery(".form-control").css("height","40px");
+		    }
+		});
+
+		// Reduce height of the search bar on scroll
+
+		jQuery(window).scroll(function() {
+		    var scroll = jQuery(window).scrollTop();
+		    if (scroll > 480) {
+						jQuery(".form-control").css({"font-size": "0.9rem", "height": "35px"});
+						jQuery(".btn").css("height","35px");
+		    }
+		    else {
+						jQuery(".form-control").css({"font-size": "1rem", "height": "40px"});
 						jQuery(".btn").css("height","40px");
 		    }
 		});
 
 });
 
-// When the user scrolls down 225px from the top of the document, show logo and search in menu
+// When the user scrolls down 480px from the top of the document, show logo and search in menu
 
 window.onscroll = function() {scrollFunction()};
 
