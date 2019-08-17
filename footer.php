@@ -14,11 +14,15 @@
 
     <div class="col-12 col-md-12">
       <div class="container footer-social">
-        <h5>Follow and like us on social media</h5>
-        <p><?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?></p>
+        <h6>FOLLOW AND LIKE US ON SOCIAL MEDIA</h6>
+        <div class="container text-centered social-icons-footer">
+          <p><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_facebook.png" alt="facebook"></a>
+          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_twitter.png" alt="twitter"></a>
+          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_pinterest.png" alt="pinterest"></a>
+          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_instagram.png" alt="instagram"></a></p>
+        </div>
       </div>
-      <hr>
-      <div class="container footer-text">
+      <div class="container-fluid footer-text">
         <p>Copyright <?php echo date("Y"); ?>&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt="logo" height="20">&nbsp;Books & Everything Else Club All rights reserved.</p>
         <p>YangHaizi theme by Aleksandar Maksimović</p>
       </div>
