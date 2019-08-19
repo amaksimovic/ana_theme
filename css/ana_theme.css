@@ -512,30 +512,31 @@ input#url:focus {
 
 /*
   ======================================
-  6. footer
+  6. Footer
   ======================================
 */
 
 footer {
-     /* border-top: 1px solid #eee; */
      box-shadow: 0px -4px 19px 2px rgba(0,0,0,.06);
-     /* background-color: #ffffff; */
 }
 .footer-text,
 .footer-social {
     font-family: 'Raleway Medium', sans-serif;
     font-size: 14px;
     text-align: center;
-    margin-top: 20px;
+}
+.footer-social {
+    margin-top: 1rem;
 }
 .footer-text {
     border-top: 1px solid rgba(0,0,0,.1);
+    padding-top: 20px;
 }
 .social-icons-footer {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 .social-icons-footer img{
-    width: 45px;
+    width: 40px;
     margin: 3px;
 }
 

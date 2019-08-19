@@ -14,16 +14,16 @@
 
     <div class="col-12 col-md-12">
       <div class="container footer-social">
-        <h6>FOLLOW AND LIKE US ON SOCIAL MEDIA</h6>
-        <div class="container text-centered social-icons-footer">
-          <p><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_facebook.png" alt="facebook"></a>
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_twitter.png" alt="twitter"></a>
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_pinterest.png" alt="pinterest"></a>
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_instagram.png" alt="instagram"></a></p>
+        <p><b>FOLLOW & LIKE US</b></p>
+        <div class="text-centered social-icons-footer">
+          <p><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_facebook.png" alt="facebook" class="social-icons"></a>
+          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_twitter.png" alt="twitter" class="social-icons"></a>
+          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_pinterest.png" alt="pinterest" class="social-icons"></a>
+          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/thin_instagram.png" alt="instagram" class="social-icons"></a></p>
         </div>
       </div>
-      <div class="container-fluid footer-text">
-        <p>Copyright <?php echo date("Y"); ?>&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt="logo" height="20">&nbsp;Books & Everything Else Club All rights reserved.</p>
+      <div class="footer-text">
+        <p>Copyright <?php echo date("Y"); ?>&nbsp;<a href="http://booksandanythingelse.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt="logo" height="20"></a>&nbsp;Books & Everything Else Club All rights reserved.</p>
         <p>YangHaizi theme by Aleksandar Maksimović</p>
       </div>
 
