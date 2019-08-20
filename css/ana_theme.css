@@ -161,14 +161,12 @@ a.nav-link.active {
     border: 0;
 }
 .dropdown-menu {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;*/
+    /* margin-top: ;  */
     font-size: 1.1rem;
     color: #626161;
-    background-clip: border-box;
-    background: rgba(255,255,255,0.9);
-    border: 0;
-    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 19px 2px rgba(0,0,0,.06);
+    border-radius: 5px;
 }
 .dropdown-item {
     display: block;
@@ -179,7 +177,7 @@ a.nav-link.active {
     color: #626161;
     text-align: inherit;
     white-space: nowrap;
-    background: transparent;
+    /* background: transparent; */
     border: 0;
 }
 a.dropdown-item:hover,
@@ -450,9 +448,10 @@ a.more-link:visited {
 */
 
 h3.comment-count-area {
-    font-family: 'Raleway Medium', sans-serif;
+    /* font-family: 'Raleway Medium', sans-serif;
     color: #3F3F3F;
-    padding: 10px 0 0 0;
+    padding: 10px 0 0 0; */
+    display: none;
 }
 .epoch-comment-body {
     width: 95%;
@@ -466,6 +465,7 @@ a.comments-title:visited {
 }
 footer.epoch-comment-meta {
     border-top: none;
+    box-shadow: none;
 }
 .epoch-comment-content p {
     font-size: 14px;
@@ -476,6 +476,7 @@ footer.epoch-comment-meta {
 }
 .epoch-comment-author {
     font-weight: bold;
+    /* background-color: transparent; */
 }
 #epoch-comments a.epoch-comment-link:link,
 #epoch-comments a.epoch-comment-link:visited {
@@ -526,7 +527,7 @@ footer {
     text-align: center;
 }
 .footer-social {
-    margin-top: 1rem;
+    padding-top: 10px;
 }
 .footer-text {
     border-top: 1px solid rgba(0,0,0,.1);

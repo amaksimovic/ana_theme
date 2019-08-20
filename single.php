@@ -38,7 +38,18 @@
 
 							<div class="post-comments pb-3">
 
-								<a href="#comments" data-toggle="collapse" class="comments-title"><i class="fas fa-comments"></i>&nbsp&nbspClick to comment and view the conversation</a>
+								<a href="#comments" data-toggle="collapse" class="comments-title"><i class="fas fa-comments"></i>&nbsp&nbsp
+									<?php
+
+					            printf(
+					                esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'ana_theme' ) ),
+					                number_format_i18n( get_comments_number() ),
+					                '<span>'. get_the_title() .'</span>'
+					            );
+
+						       ?>
+								</a>
+
 								<div id="comments" class="collapse pt-2">
 									<?php
 											if( comments_open() ){
