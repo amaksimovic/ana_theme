@@ -15,6 +15,11 @@
   1. Global
   ======================================
 */
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700&display=swap&subset=latin-ext');
+@font-face {
+    font-family: 'Raleway Medium', sans-serif;
+    src: url('/fonts/Raleway-Medium.ttf');
+}
 
 html,
 body {
@@ -547,14 +552,42 @@ footer {
   ======================================
 */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1200px) {
+
+    .social-icons {
+        width: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    aside#text-4 {
+        display: none;
+    }
+    aside#search-3 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 860px) {
 
     .navbar {
         font-size: 1.1em;
         padding-left: 0.5rem; /*novo*/
     }
     .navbar li {
-        padding-right: 10px;
+        padding-right: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .navbar {
+        font-size: 1.1em;
+        padding-left: 0.5rem; /*novo*/
     }
     .dropdown-menu {
         background: transparent;
@@ -608,6 +641,25 @@ footer {
     }
     #epoch-wrap #epoch-comments .epoch-child {
         border-left: none!important;
+    }
+
+}
+
+@media only screen and (max-width: 670px) {
+
+    li#menu-search {
+        display: none!important;
+    }
+    aside#search-3 {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    #menu-logo {
+        display: none!important;
     }
 
 }
