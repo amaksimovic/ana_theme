@@ -203,7 +203,7 @@ add_filter('wp_nav_menu_items','add_new_menu_item', 10, 2);
 
 function add_new_menu_item( $nav, $args ) {
     if( $args->theme_location == 'primary' )
-    $newmenuitem = "<a href='http://localhost/yanghaizi/'><li id='menu-logo'><img src='http://localhost/yanghaizi/wp-content/themes/ana_theme/img/icon1.png' alt='' width='25'></li></a>";
+    $newmenuitem = "<a href='http://booksandanythingelse.com/'><li id='menu-logo'><img src='http://localhost/yanghaizi/wp-content/themes/ana_theme/img/icon1.png' alt='' width='25'></li></a>";
     $nav = $newmenuitem.$nav;
     return $nav;
 }

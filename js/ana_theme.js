@@ -8,9 +8,14 @@ function scrollFunction() {
 		document.getElementById("menu-search").style.display = "block";
 		document.getElementById("menu-logo").style.display = "block";
 		var navLink = document.getElementsByClassName("navbar");
-		for (var i = 0; i < navLink.length; i++ ) {
+    for (var i = 0; i < navLink.length; i++ ) {
 			navLink[i].style.fontSize = "1.1em";
 			navLink[i].style.transition = "font-size 0.25s ease-in";
+    }
+    var dropDown = document.getElementsByClassName("dropdown-menu");
+    for (var j = 0; j < dropDown.length; j++ ) {
+      dropDown[j].style.fontSize = "1rem";
+      dropDown[j].style.transition = "font-size 0.25s ease-in";
 		}
 	} else {
 		document.getElementById("menu-search").style.display = "none";
@@ -19,6 +24,11 @@ function scrollFunction() {
 		for (var i = 0; i < navLink.length; i++ ) {
 			navLink[i].style.fontSize = "1.3em";
 			navLink[i].style.transition = "font-size 0.25s ease-in";
+    }
+    var dropDown = document.getElementsByClassName("dropdown-menu");
+    for (var j = 0; j < dropDown.length; j++ ) {
+      dropDown[j].style.fontSize = "1.2rem";
+      dropDown[j].style.transition = "font-size 0.25s ease-in";
 		}
 	}
 }
@@ -71,19 +81,5 @@ jQuery(document).ready(function() {
 						jQuery(".fa-search").css("vertical-align","baseline");
 		    }
 		});
-
-		// When the user scrolls down ???px from the top of the document, move search form right, the rest left and show social icons
-
-		// jQuery(window).scroll(function() {
-		// 		var scroll = jQuery(window).scrollTop();
-		// 		if (scroll > 680) {
-		// 				jQuery("#menu-search").css("animation": "slide-left 0.7s");
-		// 				jQuery("#menu-logo").css("animation": "slide-right 0.7s");
-		// 		}
-		// 		else {
-		// 				jQuery("#menu-search").css("animation": "slide-right 0.7s");
-		// 				jQuery("#menu-logo").css("animation": "slide-left 0.7s");
-		// 		}
-		// });
 
 });
