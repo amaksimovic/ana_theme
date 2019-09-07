@@ -1,32 +1,32 @@
 
-// When the user scrolls down 480px from the top of the document, show logo and search in menu
+// When the user scrolls down 480px from the top of the document, show logo and search in menu, decrease font size
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+  var navLink = document.getElementsByClassName("navbar");
+  var dropDown = document.getElementsByClassName("dropdown-menu");
+  var i;
+  var j;
   if (document.body.scrollTop > 480 || document.documentElement.scrollTop > 480) {
 		document.getElementById("menu-search").style.display = "block";
 		document.getElementById("menu-logo").style.display = "block";
-		var navLink = document.getElementsByClassName("navbar");
-    for (var i = 0; i < navLink.length; i++ ) {
+    for (i = 0; i < navLink.length; i++ ) {
 			navLink[i].style.fontSize = "1.1em";
 			navLink[i].style.transition = "font-size 0.25s ease-in";
     }
-    var dropDown = document.getElementsByClassName("dropdown-menu");
-    for (var j = 0; j < dropDown.length; j++ ) {
+    for (j = 0; j < dropDown.length; j++ ) {
       dropDown[j].style.fontSize = "1rem";
       dropDown[j].style.transition = "font-size 0.25s ease-in";
 		}
 	} else {
 		document.getElementById("menu-search").style.display = "none";
 		document.getElementById("menu-logo").style.display = "none";
-		var navLink = document.getElementsByClassName("navbar");
-		for (var i = 0; i < navLink.length; i++ ) {
+		for (i = 0; i < navLink.length; i++ ) {
 			navLink[i].style.fontSize = "1.3em";
 			navLink[i].style.transition = "font-size 0.25s ease-in";
     }
-    var dropDown = document.getElementsByClassName("dropdown-menu");
-    for (var j = 0; j < dropDown.length; j++ ) {
+    for (j = 0; j < dropDown.length; j++ ) {
       dropDown[j].style.fontSize = "1.2rem";
       dropDown[j].style.transition = "font-size 0.25s ease-in";
 		}
