@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="footer-text">
-        <p>Copyright <?php echo date("Y"); ?>&nbsp;<a href="http://booksandanythingelse.com/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt="logo" height="20"></a>&nbsp;BOOKS & Anything Else Club All rights reserved.</p>
+        <p>Copyright &copy; <?php echo date("Y"); ?>&nbsp;<a href="http://booksandanythingelse.com/"><img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt="logo" height="20"></a>&nbsp;BOOKS & Anything Else Club All rights reserved.</p>
         <p>YangHaizi theme by Aleksandar Maksimović</p>
       </div>
 
